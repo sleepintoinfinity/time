@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+ 
+  /*  background-image: url('bg.jpeg'); */
+
+/* The background-size property specifies the size of the background images.
+    (cover) ----> Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+/* background-size: cover; */
+height: 100vh;
+overflow: hidden;
+    
+}
+
+.taskbar{
+    /*position - absolute
+    An element with the absolute position will move according to the position of its parent element.
+    In the absence of any parent element, the HTML element will be placed relative to the page.
+    */
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    z-index: 110;
+}
+
+.right{
+    position: absolute;
+    right: 0;
+    /*
+    Margin- It clears an area outside the border.
+    margin-top/bottom  left/right
+    */
+    margin: 6px 0px;
+    height: 80%;
+}
+
+.startmenu{
+    position: absolute;
+    /*bottom: 50px;*/
+    bottom: -650px;
+    width: 100%;
+    text-align: center;
+    transition:all 0.3s ease-in;
+}
+
+.startmenu img{
+    border-radius: 20px;
+    height:500px
+}
